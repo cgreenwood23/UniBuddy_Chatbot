@@ -2,7 +2,7 @@
 
 ## How to run:
 ```sh
-python3 unichatbot.py
+python3 unibuddychatbot.py
 ```
 
 ## License
