@@ -29,7 +29,15 @@ name = input("Firstly, what is your name? ")
 print(f"\nHi {name}! It is so nice to meet you!")
 
 # Accept age input and cast it to an integer
-age = int(input(f"\nHow old will you be when starting univerity {name}? "))
+while True:
+    try:
+        age = int(input(f"\nHow old will you be when starting univerity {name}? "))
+        if age > 0:
+            break
+        else:
+            print("Please enter a postivie number!")
+    except ValueError:
+        print("Please enter a valid numerical input!")
 
 # Vary output depending on age input
 if age <= 17:
